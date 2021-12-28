@@ -1,0 +1,302 @@
+*{
+   box-sizing: border-box;
+   font-family: 'Manrope', 'sans-serif';
+}
+.main-container{
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    position: relative;
+}
+#grid-container1{
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 20% 50% 10% 20%;
+    width: 40%;
+    height: 75vh;
+    
+    
+}
+.grid-container2{
+    width: 45%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 20% 95%;
+    grid-row-gap: 30px;
+
+}
+#clock-pic{
+    
+    background-image: url(./clock.jpg);
+    background-size: 100% 100%;
+    display: inline;
+}
+
+#left-second-container{
+      
+    background-color:white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    border-radius: 10px;
+    position: relative;
+}
+.left-second-container-inner{
+     
+    width: 100%;
+    height: 33%;
+    position: relative;
+}
+.left-second-container-option{
+    width:80%;
+    height: 100%;
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+}
+
+#wakeupTimeSelector{
+    width:130px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 35px;
+    margin-top: 5px;
+}
+#lunchtimeselector{
+    width:130px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 65px;
+    margin-top: 5px;
+    
+}
+#naptimeselector{
+    width:130px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 85px;
+    margin-top: 5px;
+}
+#div1{
+    background-image: url(./assets/wake_up.svg);
+    width:20%;
+    height: 100%;
+    background-repeat:no-repeat ;
+    background-position: center;
+    display: inline-block;
+}
+
+ #div2{
+    background-image: url(./assets/lunch_time.svg);
+    width:20%;
+    height: 100%;
+    background-repeat:no-repeat ;
+    background-position: center;
+    display: inline-block;
+} 
+#div3{
+    background-image: url(./assets/nap_time.svg);
+    width:20%;
+    height: 100%;
+    background-repeat:no-repeat ;
+    background-position: center;
+    display: inline-block;
+} 
+.left-second-container-option2{
+    width:80%;
+    height: 100%;
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+}
+/* .vertical-line{
+    position: relative;
+    z-index: 1;
+    margin-top: 1%;
+    top: 10px;
+    left: -6.3%;
+} */
+
+
+#set-time{
+    text-align: center;
+    padding-top:15px ;
+    border-radius: 5px;
+    background-image: linear-gradient( 113deg, #6E54EC, #C852F8, #FC5EFF,#F1A7C5);
+    font:var(--unnamed-font-style-normal)normal var(--unnamed-font-weight-600);
+    color: white;
+}
+#set-time:hover{
+    cursor: pointer;
+    background-image: linear-gradient( -113deg, #6E54EC, #C852F8, #FC5EFF,#F1A7C5);
+}
+
+
+/* #grid-container2{
+    color: #5F0089;
+    display: grid;
+    
+    row-gap: 30px;
+    margin: 3% 0 0 5%;
+    grid-template-rows: 100px 500px ;
+    width: 500px;
+} */
+
+.grid-item2{
+    background-color: #fff;
+    border-radius: 10px;
+}
+#digital-clock{
+    display: flex;
+    justify-content: center;
+    
+}
+#clock1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 100%;
+    margin-left: 2%;
+}
+#clock2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #5F0089;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #F6E2FF;
+    width: 15%;
+    height: 80px;
+    margin-left: 5%;
+}
+#clock3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #5F0089;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #F6E2FF;
+    width: 15%;
+    height: 80px;
+    margin-left: 1%;
+}
+#clock4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #5F0089;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #F6E2FF;
+    width: 15%;
+    height: 80px;
+    margin-left: 1%;
+}
+.colons{
+    margin-left: 1%;
+    font-size: 30px;
+    color: #5F0089;
+}
+#am-img{
+    background-image: url(assets/AM_svg.svg);
+    margin-left: 5%;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 15%;
+    font-size: 30px;
+    color: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#lb1{
+    width: 25%;
+    height: 10%;
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+#lb2{
+    width: 22%;
+    height: 10%;
+    position: absolute;
+    top: 70px;
+    background-color: #fff;
+    opacity: 0.3;
+    border-radius: 10px;    
+    z-index: -2;
+}
+
+#hours{
+    font-size: 40px;
+}
+#minutes{
+    font-size: 40px;
+}
+#seconds{
+    font-size: 40px;
+}
+
+.grid-item2{
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    height: 100%;
+
+}
+
+#right-container{
+    display: grid;
+    grid-template-rows: 100px 400px;
+}
+#right-container-image{
+    background-image: url(assets/Happy-Birthday-Balloons-Free-PNG-Image.png);
+    width: 100%;
+    height: 98%;
+    background-size: 100%;
+}
+
+#right-container-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8E53F0;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+#dynamic-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 100px;
+    background-color: #9140B5;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: none;
+}
+
+
+
+
